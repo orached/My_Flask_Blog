@@ -8,22 +8,75 @@ body {
     color: #444444;
   }
   
-  .bg-steel {
-    background-color: #5f788a;
+
+  .navbar-dark {
+    background: linear-gradient(to right, rgba(0, 45, 165, 0.97), rgba(10, 88, 157, 0.97), rgba(10, 88, 157, 0.97), rgba(0, 45, 165, 0.97));
   }
   
-  .site-header .navbar-nav .nav-link .social-links{
-    color: #cbd5db;
+  .navbar-brand {
+    margin-right: 20px;
   }
   
-  .site-header .navbar-nav .nav-link:hover .social-links{
-    color: #ffffff;
+  .nav-item {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 80%;
+    padding: 0 .4rem;
   }
   
-  .site-header .navbar-nav .nav-link.active {
-    font-weight: 500;
+  .navbar .navbar-nav .nav-link {
+    transition: all .05s ease-in-out;
   }
   
+  .navbar-dark .navbar-nav .nav-link.active {
+    border-bottom: 1px solid white;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:hover {
+    border-bottom: 1px solid white;
+  }
+  
+  .navbar-toggler:hover {
+    cursor: pointer;
+  }
+  
+  #search-bar {
+    background-color: #5c87af;
+    color: white;
+    font-size: 14px;
+    width: 200px;
+    height: 30px;
+    transition: all .2s;
+    border: none;
+  }
+  
+  #search-bar:hover {
+    background-color: #779ec1;
+  }
+  
+  #search-bar:focus {
+    background-color: white;
+    color: #212529;
+    width: 400px;
+  }
+  
+  #search-bar::-webkit-input-placeholder {
+    color: white !important;
+  }
+  
+  #search-bar:-moz-placeholder {
+    /* Firefox 18- */
+    color: white !important;
+  }
+  
+  #search-bar::-moz-placeholder {
+    /* Firefox 19+ */
+    color: white !important;
+  }
+  
+  #search-bar:-ms-input-placeholder {
+    color: white !important;
+  }
   .content-section {
     background: #ffffff;
     padding: 10px 20px;
