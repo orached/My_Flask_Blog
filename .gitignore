@@ -1,0 +1,7 @@
+# Created manually to ignore cash.
+__pycache__/
+*.pyc
+
+.pytest_cache
+
+.vscode

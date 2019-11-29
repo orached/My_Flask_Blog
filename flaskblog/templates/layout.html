@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
     <!-- Site logo -->
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}"/>
-    
+
     {% if title %}
         <title>Orached - {{ title }}</title>
     {% else %}
@@ -29,7 +29,7 @@
     <nav class="navbar fixed-top navbar-dark navbar-expand-md">
       <div class="container">
         <a class="navbar-brand" href="/">
-          <img src="//placehold.it/100x28" height=28 class="" />
+          <img src="{{ url_for('static', filename='profile_pics/default.jpg') }}" height=28 class="" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
           <span class="navbar-toggler-icon"></span>
